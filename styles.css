@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap');
+
+* {
+  font-family: 'Arimo', sans-serif;
+}
+
+body{
+  background-color: #C5E0DC;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  padding: 0 20px;
+}
+
+#logo-upload-button-img{
+  background-color: #0096FF;
+}
+
+#image-container{
+  display: flex;
+  justify-content: center;
+}
+
+.umbrella-image {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.themes-container {
+  margin:  auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arimo', sans-serif;
+}
+
+.themes-container h1 {
+  font-size: 24px !important;
+}
+
+.themes img {
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0px;
+  margin-bottom: 10px;
+}
+
+.upload-button {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.loader-container {
+  align-items: center;
+}
+
+.loader-container img {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#logo-upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0096FF;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#logo-upload-button:hover img ,#logo-upload-button:hover {
+  background-color: #f1b2b2;
+}
+
+#logo-upload-button img {
+  margin-bottom: 50px;
+  height: 25px;
+  width: 20px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;
+}
+
+#logo-upload-button {
+  width: 270px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+.container{
+  display: block;
+}
+
+  .image-container {
+    max-width: 400px;
+  }
+
+  #theme{
+    display:  flex;
+    justify-content: center;
+    gap:2%;
+  }
+
+  .upload-button {
+    justify-content: center;
+  }
+  h1,h3 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  p{
+    text-align:  center;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+}
+
